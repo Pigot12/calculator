@@ -1,5 +1,4 @@
 import ''
-export ''
 
 //Text 
 
