@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-grid" aria-label="Calculator">
+      <div class="output" aria-live="polite">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand">0</div>
+      </div>
 
-<script type="module" src="main.js" defer></script>
-<link rel="stylesheet" type="text/css" href="html\sass\styles.sass">
-<meta charset="utf-8">
-<title>Calculator(tutorial)</title>
-</head>
-<body>
-<div class="calculator-grid">
-    <div class="output">
-        <div class="previous-operand"></div>
-        <div class="current-operand"></div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
     </div>
-    <button>AC</button>
-    <button></button>
-</div>
-
-</body>
-<p>d</p>
+  </body>
 </html>
